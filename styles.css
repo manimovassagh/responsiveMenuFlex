@@ -38,6 +38,10 @@ nav a:hover{
 @media screen and (min-width:760px){
     nav ul{
         display: flex;
+        /* justify-content: flex-end; */
+        /* that in up must use with flex 1 1 0 off(first make  that off otherweise not working) */
+        /* justify-content: space-around; */
+        /* justify-content: flex-start; */
     }
 }
 nav li{
