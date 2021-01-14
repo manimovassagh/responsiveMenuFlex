@@ -26,13 +26,43 @@ nav a {
     text-decoration: none;
     text-align: center;
     color: #ffffff;
-    padding:10px;
     display: block;
-    border: solid 1px coral;
+    padding:10px;
+    /* border: solid 1px coral; */
 }
 nav a:hover{
     background-color: #555;
 }
+
+/*social media menu style*/
+a.tw{
+    background:url(img/twitterLogo.jpg) no-repeat center;
+    background-size: 80%;
+
+}
+a.fb{
+    background:url(img/facebook-logo.png) no-repeat center;
+    background-size: 80%;
+}
+.social a{
+    text-indent: -100000px;
+
+}
+.social{
+    max-width: 80px;
+    margin: 0 auto;
+ 
+}
+/* flex styles */
+nav ul.social{
+    flex:1 1 0;
+   display: flex;
+}
+nav ul.social li{
+    flex: 1 1 0;
+}
+
+
 /* flex style */
 
 @media screen and (min-width:760px){
@@ -46,4 +76,11 @@ nav a:hover{
 }
 nav li{
     flex:1 1 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    margin: 0;
 }
